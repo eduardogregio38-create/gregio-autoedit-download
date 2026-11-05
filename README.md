@@ -1,2 +1,3 @@
-# gregio-autoedit-download
-Gregio AutoEdit: baixe aqui o app para Mac e Windows
+# Gregio AutoEdit
+
+Baixe o app em https://eduardogregio38-create.github.io/gregio-autoedit-download/

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gregio AutoEdit · Edição automática de vídeos para Reels</title>
+<meta name="description" content="Gregio AutoEdit edita seus vídeos para Reels sozinho, no seu computador. Para Mac e Windows.">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--acento:#5b3df5;--fundo:#0e0e12;--cartao:#18181f;--texto:#ececf1;--suave:#a3a3b2;--linha:#2a2a34}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--texto);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55}
+a{color:#a99bff}
+.topo{max-width:1080px;margin:0 auto;padding:22px 20px;display:flex;align-items:center;gap:12px}
+.topo img{width:36px;height:36px}
+.marca{font-size:20px}.marca b{font-weight:800;letter-spacing:2px}.marca span{opacity:.75}
+.topo nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+.topo nav a{color:var(--suave);text-decoration:none}
+.hero{max-width:1080px;margin:0 auto;padding:60px 20px 40px;text-align:center}
+.hero h1{font-size:44px;line-height:1.15;margin:0 0 16px;letter-spacing:-.5px}
+.hero h1 em{font-style:normal;color:#a99bff}
+.hero p{font-size:19px;color:var(--suave);max-width:640px;margin:0 auto 34px}
+.baixar{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.bt{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--acento);color:#fff;text-decoration:none;
+  padding:14px 22px;border-radius:12px;font-weight:700;min-width:230px;text-align:left}
+.bt small{font-weight:400;opacity:.85;font-size:13px}
+.bt.claro{background:var(--cartao);border:1px solid var(--linha)}
+.nota{color:var(--suave);font-size:13px;margin-top:22px}
+.passos{max-width:1080px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.passo{background:var(--cartao);border:1px solid var(--linha);border-radius:14px;padding:22px}
+.passo .n{width:30px;height:30px;border-radius:50%;background:var(--acento);display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:12px}
+.passo h3{margin:0 0 6px;font-size:17px}.passo p{margin:0;color:var(--suave);font-size:15px}
+.secao{max-width:1080px;margin:56px auto;padding:0 20px}
+.secao h2{font-size:26px;margin:0 0 18px}
+.lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px 30px;padding:0;margin:0;list-style:none}
+.lista li{padding-left:24px;position:relative;color:var(--suave)}
+.lista li:before{content:"";position:absolute;left:4px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--acento)}
+.lista b{color:var(--texto);font-weight:600}
+.caixa{background:var(--cartao);border:1px solid var(--linha);border-radius:14px;padding:22px}
+.caixa p{margin:0 0 10px;color:var(--suave)}.caixa p:last-child{margin:0}
+details{background:var(--cartao);border:1px solid var(--linha);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--suave);margin:10px 0 0}
+footer{border-top:1px solid var(--linha);margin-top:60px;padding:26px 20px;text-align:center;color:var(--suave);font-size:14px}
+footer a{color:var(--suave)}
+@media (max-width:600px){.hero h1{font-size:32px}.hero{padding-top:30px}.bt{width:100%}.topo nav{display:none}}
+</style>
+</head>
+<body>
+<header class="topo">
+  <img src="icone.png" alt="">
+  <div class="marca"><b>GREGIO</b> <span>AutoEdit</span></div>
+  <nav><a href="#como">Como funciona</a><a href="#seguranca">Seus dados</a><a href="privacidade.html">Privacidade</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Seus takes viram um Reels pronto, <em>sozinhos</em>.</h1>
+  <p>O Gregio AutoEdit escolhe as melhores falas, corta pausas, intercala com as imagens, coloca música no ritmo e cria a capa. Tudo no seu computador.</p>
+  <div class="baixar">
+    <a class="bt" id="bt-mac" href="https://github.com/eduardogregio38-create/gregio-autoedit-download/releases/latest/download/Gregio-AutoEdit-mac-arm64.dmg">Baixar para Mac<small>Chip Apple (M1, M2, M3, M4)</small></a>
+    <a class="bt claro" href="https://github.com/eduardogregio38-create/gregio-autoedit-download/releases/latest/download/Gregio-AutoEdit-mac-x64.dmg">Baixar para Mac<small>Processador Intel</small></a>
+    <a class="bt" id="bt-win" href="https://github.com/eduardogregio38-create/gregio-autoedit-download/releases/latest/download/Gregio-AutoEdit-Windows-Instalador.exe">Baixar para Windows<small>Windows 10 e 11</small></a>
+  </div>
+  <p class="nota">Gratuito. Não sabe qual Mac você tem? Menu Apple › Sobre este Mac: se aparecer "Chip Apple", é o primeiro botão.</p>
+</section>
+
+<section class="passos" id="como">
+  <div class="passo"><div class="n">1</div><h3>Arraste os takes</h3><p>Coloque os vídeos gravados na aba Mídias e dê um nome. A edição começa na hora.</p></div>
+  <div class="passo"><div class="n">2</div><h3>Acompanhe</h3><p>Você vê cada etapa e quanto falta. Nada de ficar adivinhando.</p></div>
+  <div class="passo"><div class="n">3</div><h3>Aprove ou reprove</h3><p>Gostou, aprova e o vídeo vai para o seu Google Drive. Não gostou, diz o motivo e o app refaz e aprende.</p></div>
+</section>
+
+<section class="secao">
+  <h2>O que ele faz por você</h2>
+  <ul class="lista">
+    <li><b>Separa fala de imagens</b> e usa cada uma no lugar certo</li>
+    <li><b>Corta pausas, gaguejos e repetições</b></li>
+    <li><b>Intercala</b> a pessoa falando com montagens e narração por cima</li>
+    <li><b>Cortes no ritmo da música</b>, com transições suaves</li>
+    <li><b>Voz limpa</b> e música que abaixa quando alguém fala</li>
+    <li><b>Formato vertical 1080x1920</b>, pronto para Reels, TikTok e Shorts</li>
+    <li><b>Capa automática</b> com o melhor quadro e o título</li>
+    <li><b>Legenda .srt</b> e pacote para CapCut, Premiere e DaVinci</li>
+    <li><b>Aprende o seu jeito</b> a cada vídeo que você aprova ou reprova</li>
+    <li><b>Atualiza sozinho</b>, sem perder seus arquivos</li>
+  </ul>
+</section>
+
+<section class="secao" id="seguranca">
+  <h2>Seus dados ficam com você</h2>
+  <div class="caixa">
+    <p>A edição acontece no seu computador. Seus vídeos não passam por nenhum servidor nosso.</p>
+    <p>Você entra com a sua conta Google e o app só consegue mexer na pasta "Gregio AutoEdit" que ele cria no lugar que você escolher. O resto do seu Drive ele não enxerga.</p>
+    <p>Você pode tirar o acesso quando quiser em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Detalhes na <a href="privacidade.html">Política de Privacidade</a>.</p>
+  </div>
+</section>
+
+<section class="secao">
+  <h2>Primeira vez abrindo</h2>
+  <details><summary>No Mac aparece "não é possível abrir"</summary>
+    <p>Abra a pasta Aplicativos, clique com o botão direito no Gregio AutoEdit e escolha Abrir. Depois clique em Abrir de novo. Só precisa fazer isso uma vez. Se não aparecer a opção, vá em Ajustes do Sistema › Privacidade e Segurança e clique em "Abrir Mesmo Assim".</p></details>
+  <details><summary>No Windows aparece "O Windows protegeu o computador"</summary>
+    <p>Clique em "Mais informações" e depois em "Executar assim mesmo". Isso aparece em programas novos que ainda não têm muitos downloads.</p></details>
+  <details><summary>Preciso pagar alguma coisa?</summary>
+    <p>Não. O app é gratuito. As músicas de fundo você adiciona na aba Ajustes: use só músicas que você tem direito de usar.</p></details>
+  <details><summary>Qual computador eu preciso?</summary>
+    <p>Mac com macOS 10.15 ou mais novo, ou Windows 10/11 de 64 bits, com pelo menos 8 GB de memória e uns 2 GB livres. Quanto mais novo o computador, mais rápida a edição.</p></details>
+</section>
+
+<footer>
+  Gregio AutoEdit · <a href="privacidade.html">Política de Privacidade</a> · Contato: <a href="mailto:eduardogregio38@gmail.com">eduardogregio38@gmail.com</a>
+</footer>
+<script>
+// destaca o botão do sistema de quem está visitando
+const ua = navigator.userAgent;
+if (/Windows/.test(ua)) document.getElementById("bt-win").style.outline = "2px solid #fff";
+else if (/Mac/.test(ua)) document.getElementById("bt-mac").style.outline = "2px solid #fff";
+</script>
+</body>
+</html>
